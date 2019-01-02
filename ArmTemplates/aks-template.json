@@ -25,7 +25,7 @@
             "type": "int"
         },
         "agentVMSize": {
-            "defaultValue": "Standard_F2",
+            "defaultValue": "Standard_D2_v2",
             "type": "string"
         },
         "kubernetesVersion": {
