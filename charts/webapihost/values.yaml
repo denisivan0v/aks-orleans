@@ -1,7 +1,7 @@
 # Default values for sampleapp.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-fullnameOverride: WebApiHost
+fullnameOverride: webapihost
 replicaCount: 2
 image:
   repository: VALUE_TO_BE_OVERRIDDEN
