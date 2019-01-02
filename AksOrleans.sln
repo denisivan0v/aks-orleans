@@ -2,6 +2,24 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiHost", "WebApiHost\WebApiHost.csproj", "{F5044108-6900-4D63-B716-0EC10DB3E688}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "charts", "charts", "{2D0FF3DB-980D-4C95-820F-9815E3FAD2B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiHost", "WebApiHost", "{F60F09A1-AF4C-4680-BABB-5A79AC11404F}"
+ProjectSection(SolutionItems) = preProject
+	charts\WebApiHost\Chart.yaml = charts\WebApiHost\Chart.yaml
+	charts\WebApiHost\values.yaml = charts\WebApiHost\values.yaml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{89F3B5CE-3B7D-47C1-8AC5-D4A33BC4376D}"
+ProjectSection(SolutionItems) = preProject
+	charts\WebApiHost\templates\NOTES.txt = charts\WebApiHost\templates\NOTES.txt
+	charts\WebApiHost\templates\_helpers.tpl = charts\WebApiHost\templates\_helpers.tpl
+	charts\WebApiHost\templates\deployment.yaml = charts\WebApiHost\templates\deployment.yaml
+	charts\WebApiHost\templates\ingress.yaml = charts\WebApiHost\templates\ingress.yaml
+	charts\WebApiHost\templates\secrets.yaml = charts\WebApiHost\templates\secrets.yaml
+	charts\WebApiHost\templates\service.yaml = charts\WebApiHost\templates\service.yaml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +30,9 @@ Global
 		{F5044108-6900-4D63-B716-0EC10DB3E688}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5044108-6900-4D63-B716-0EC10DB3E688}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5044108-6900-4D63-B716-0EC10DB3E688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F60F09A1-AF4C-4680-BABB-5A79AC11404F} = {2D0FF3DB-980D-4C95-820F-9815E3FAD2B5}
+		{89F3B5CE-3B7D-47C1-8AC5-D4A33BC4376D} = {F60F09A1-AF4C-4680-BABB-5A79AC11404F}
 	EndGlobalSection
 EndGlobal
