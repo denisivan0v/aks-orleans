@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
+using Serilog;
+
 namespace WebApiHost
 {
     public static class Program
@@ -12,6 +14,7 @@ namespace WebApiHost
 
         private static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                   .UseStartup<Startup>();
+                   .UseStartup<Startup>()
+                   .UseSerilog((context, configuration) => configuration.ReadFrom.Configuration(context.Configuration));
     }
 }
