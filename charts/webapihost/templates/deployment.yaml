@@ -29,11 +29,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: {{ .Values.service.livenessProbe.httpPath }}
               port: http
           readinessProbe:
             httpGet:
-              path: /
+              path: {{ .Values.service.readinessProbe.httpPath }}
               port: http
           env:
             - name: APPINSIGHTS_INSTRUMENTATIONKEY

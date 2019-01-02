@@ -16,6 +16,10 @@ imagePullSecrets: []
   # - name: myRegistryKeySecretName
 service:
   port: 5000
+  livenessProbe:
+    httpPath: /swagger
+  readinessProbe:
+    httpPath: /swagger
 
 ingress:
   enabled: false
