@@ -20,6 +20,13 @@ ProjectSection(SolutionItems) = preProject
 	charts\WebApiHost\templates\service.yaml = charts\WebApiHost\templates\service.yaml
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArmTemplates", "ArmTemplates", "{9606869B-F985-405D-93C9-B2084AE91B73}"
+ProjectSection(SolutionItems) = preProject
+	ArmTemplates\aks-applicationInsights.json = ArmTemplates\aks-applicationInsights.json
+	ArmTemplates\aks-template.json = ArmTemplates\aks-template.json
+	ArmTemplates\containerRegistry-template.json = ArmTemplates\containerRegistry-template.json
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
